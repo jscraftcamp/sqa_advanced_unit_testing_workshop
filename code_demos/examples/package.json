@@ -1,0 +1,23 @@
+{
+  "name": "string_calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "happy-dom": "^15.11.7",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@types/isomorphic-fetch": "^0.0.35",
+    "isomorphic-fetch": "^3.0.0",
+    "uuid": "^8.3.1"
+  }
+}

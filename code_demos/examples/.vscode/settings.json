@@ -1,0 +1,6 @@
+{
+  "cSpell.words": [
+    "todos"
+  ],
+  "vitest.rootConfig": "./vitest.config.js"
+}

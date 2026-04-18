@@ -1,0 +1,152 @@
+/* Hell: kein Dark-Mode, weißer „Letterbox"-Rand um die Folie */
+:root {
+  --slidev-slide-container-background: #fff;
+
+  /* ── Single source of truth für Heading-Größen ──
+     #app-Präfix nötig, um Slidev/UnoCSS-Theme-Styles zu überschreiben. */
+  --h1-size: 6rem;
+  --h1-lh: 1.05;
+  --h2-size: 3rem;
+  --h2-lh: 1.3;
+  --h3-size: 2.2rem;
+  --h3-lh: 1.35;
+
+  --slidev-code-font-size: 16px;
+}
+
+html,
+body {
+  background-color: #fff;
+}
+
+/* Typography — sized for Slidev's 980×552 viewport, presentation-ready.
+   #app-Präfix schlägt Slidev-Theme + UnoCSS @apply-Regeln (layouts-base.css). */
+
+#app h1 {
+  font-size: var(--h1-size) !important;
+  line-height: var(--h1-lh) !important;
+}
+
+#app h2 {
+  font-size: var(--h2-size) !important;
+  line-height: var(--h2-lh) !important;
+}
+
+#app h3 {
+  font-size: var(--h3-size) !important;
+  line-height: var(--h3-lh) !important;
+}
+
+/* Gestapelte Überschriften (z. B. „What is the most …") — Text-Shadow braucht extra Luft.
+   `~` statt `+`, falls Markdown leere Absätze zwischen Überschriften einfügt. */
+#app .slidev-layout h1 ~ h1,
+#app .slidev-layout h2 ~ h2,
+#app .slidev-layout h3 ~ h3 {
+  margin-top: 0.15em !important;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 0.15em;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+h1 + ul li,
+h2 + ul li,
+h3 + ul li {
+  font-size: 1.8rem;
+}
+
+ol li {
+  font-size: 1.8rem;
+}
+
+ul.small li {
+  font-size: 1.1rem;
+}
+
+ul.very-small li {
+  font-size: 0.85rem;
+}
+
+ul,
+ol {
+  text-align: left;
+}
+
+h1 + ul,
+h1 + ol,
+h2 + ul,
+h2 + ol,
+h3 + ul,
+h3 + ol {
+  margin-top: 2.75rem;
+}
+
+/* Blockquote-Größe: siehe `uno.config.ts` (Layer über Utilities). */
+.slidev-layout blockquote {
+  box-shadow: none;
+  border-left: 5px solid blue;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.borderless {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+/* Code-Listings: nicht zentrieren (Zeilen links; Block volle Breite wie üblich) */
+.slidev-layout .slidev-code-wrapper,
+.slidev-layout .slidev-code-group {
+  align-self: stretch;
+  width: 100%;
+  text-align: left;
+}
+
+.slidev-layout pre,
+.slidev-layout pre code,
+.slidev-layout .shiki {
+  text-align: left !important;
+}
+
+/* Background-image slides: text shadow for readability */
+
+.bg-slide h1,
+.bg-slide h2,
+.bg-slide h3 {
+  color: white;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.bg-slide li {
+  color: white;
+  text-shadow:
+    2px 2px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* White background for contain-mode image slides */
+
+.bg-white {
+  background-color: white !important;
+}

@@ -1,0 +1,86 @@
+.reveal h1 {
+  font-size: 2.9em;
+}
+
+.reveal h2 {
+  font-size: 2em;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+}
+
+.reveal blockquote {
+  box-shadow: none;
+  border-left: 5px solid blue;
+  font-size: 0.9em;
+}
+
+.reveal {
+  font-size: 40px;
+}
+
+.reveal li {
+  font-size: 60px;
+}
+
+.reveal p {
+  font-size: 45px;
+}
+
+.reveal h1 + ul li,
+.reveal h2 + ul li,
+.reveal h3 + ul li {
+  font-size: 50px;
+}
+
+.reveal ol li {
+  font-size: 50px;
+}
+
+.reveal ul.small li {
+  font-size: 27px;
+}
+.reveal ul.very-small li {
+  font-size: 15px;
+}
+
+/* .reveal a {
+  color:aqua;
+} */
+
+.reveal img.borderless {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.reveal section[data-background] h1,
+.reveal section[data-background] h2,
+.reveal section[data-background] h3,
+.reveal section[data-background-image] h1 {
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.reveal section[data-background],
+.reveal section[data-background] h1,
+.reveal section[data-background-image],
+.reveal section[data-background-image] h1 {
+  color: white;
+}
+
+#mini-deps-image {
+  background: #a9a9a9a6;
+  padding: 10px;
+  width: 200px;
+  position: absolute;
+  left: 890px;
+  top: 0px;
+}
+
+#mini-deps-arrow {
+  width: 20px;
+  position: absolute;
+}

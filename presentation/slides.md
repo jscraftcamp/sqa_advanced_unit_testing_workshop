@@ -266,7 +266,7 @@ class: bg-slide
 
 ---
 background: /images/overspec.jpg
-class: bg-slide
+class: bg-slide bg-slide-dim
 ---
 
 ## Overspecification
@@ -290,11 +290,19 @@ background: /images/fragile.jpg
 class: bg-slide bg-slide-dim
 ---
 
-## Possible Solution
+## Possible Solution: Wrapper at the Seams
 
-=> Wrapper at the Seams
+Don't mock 3rd party code directly — wrap it behind your own interface
 
-(aka Universal Architecture by JB Rainsberger)
+<img src="/images/jb.jpg" style="position: absolute; top: 300px; right: 60px; width: 180px; border-radius: 8px;" />
+
+<div style="max-width: 65%;">
+
+- Create a thin **adapter** around external dependencies
+- Mock **your adapter**, not the library
+- aka **Universal Architecture** (JB Rainsberger)
+
+</div>
 
 ---
 background: /images/edna.jpg

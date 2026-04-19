@@ -137,12 +137,7 @@ img.borderless {
 
 .bg-slide li {
   color: white;
-  text-shadow:
-    2px 2px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Desaturated background image — keeps text readable on busy images */
@@ -151,7 +146,7 @@ img.borderless {
   position: absolute;
   inset: 0;
   background: inherit;
-  filter: saturate(0.05) brightness(0.85) blur(1.5px);
+  filter: saturate(0.3) brightness(0.85) blur(1.5px);
   z-index: 0;
 }
 
@@ -160,10 +155,6 @@ img.borderless {
   z-index: 1;
 }
 
-.bg-slide-dim li {
-  color: white;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
-}
 
 /* White background for contain-mode image slides */
 

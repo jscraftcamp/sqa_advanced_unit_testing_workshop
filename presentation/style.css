@@ -145,6 +145,21 @@ img.borderless {
     1px 1px 0 #000;
 }
 
+/* Desaturated background image — keeps text readable on busy images */
+.bg-slide-dim::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: saturate(0.05) brightness(0.85) blur(1.5px);
+  z-index: 0;
+}
+
+.bg-slide-dim > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* White background for contain-mode image slides */
 
 .bg-white {

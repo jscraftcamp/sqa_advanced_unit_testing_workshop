@@ -167,8 +167,8 @@ class: bg-slide bg-slide-dim
 | Dummy  | Spy    | e.g. `{}` |
 | Fake   | Spy    | custom implementation |
 | Stub   | Spy    | custom implementation |
-| Mock   | Spy    | — |
-| Spy    | Spy    | — |
+| Mock   | Spy    | possible but uncommon |
+| Spy    | Spy    | possible but uncommon |
 
 ---
 background: /images/typing.jpg

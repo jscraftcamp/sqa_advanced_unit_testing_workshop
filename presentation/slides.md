@@ -172,6 +172,17 @@ expect(pushSpy).toHaveBeenCalledWith("♥9");
 ```
 
 ---
+background: /images/spy.png
+class: bg-slide
+---
+
+## Vitest
+
+### Everyone is a
+
+# Spy
+
+---
 
 ## Vitest: Everyone is a Spy
 
@@ -263,6 +274,14 @@ class: bg-slide
 > Don't mock what you don't own
 
 &mdash; Steve Freeman
+
+---
+
+## Possible Solution
+
+=> Wrapper at the Seams
+
+(aka Universal Architecture by JB Rainsberger)
 
 ---
 background: /images/edna.jpg

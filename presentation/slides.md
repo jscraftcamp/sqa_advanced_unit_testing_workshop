@@ -63,6 +63,13 @@ class: bg-slide
 ```
 
 ---
+background: /images/typing.jpg
+class: bg-slide
+---
+
+# Demo
+
+---
 background: /images/fire.jpg
 class: bg-slide
 ---
@@ -149,6 +156,9 @@ class: bg-slide bg-slide-dim
 > Every test double type in Vitest is a **Spy**
 
 ---
+background: /images/spy_dim.png
+class: bg-slide bg-slide-dim
+---
 
 ## But you can also go manual
 
@@ -159,6 +169,13 @@ class: bg-slide bg-slide-dim
 | Stub   | Spy    | custom implementation |
 | Mock   | Spy    | — |
 | Spy    | Spy    | — |
+
+---
+background: /images/typing.jpg
+class: bg-slide
+---
+
+# Demo
 
 ---
 

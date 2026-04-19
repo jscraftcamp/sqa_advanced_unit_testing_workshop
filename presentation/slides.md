@@ -206,6 +206,29 @@ class: bg-slide
 
 ---
 
+```mermaid {theme: 'default', scale: 0.65}
+flowchart LR
+    Test((Test))
+    Alarm((Alarm))
+    SensorInterface{Sensor}
+
+    RealSensor([Real Sensor])
+    RandomSensor([Random Sensor])
+    StubSensor([Stub Sensor])
+
+    Alarm -->|uses| SensorInterface
+    SensorInterface -.->|impl| RealSensor
+    SensorInterface -.->|impl| RandomSensor
+    SensorInterface -.->|impl| StubSensor
+
+    RealSensor --> HTTP((HTTP))
+
+    Test -- "1. nextSensorValue(16)" --> StubSensor
+    Test -- "2. check()" --> Alarm
+```
+
+---
+
 ## Test Double Pattern 2: Functional DI
 
 Replace a function via dependency injection

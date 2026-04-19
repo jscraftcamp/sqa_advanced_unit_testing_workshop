@@ -23,59 +23,9 @@ class: bg-slide
 
 ## Topics
 
-1. Fragile Tests
-2. Assertions
-3. Test Doubles
-
----
-background: /images/fragile.jpg
-class: bg-slide
----
-
-# Fragile Tests
-
-http://xunitpatterns.com/Fragile%20Test.html
-
----
-background: /images/cat.jpg
-class: bg-slide
----
-
-> I tried harder but TDD still didn't work for me!
-
-<br><br><br><br><br><br>
-
-&mdash; Grumpy Developer
-
----
-background: /images/ripple.jpg
-class: bg-slide
----
-
-## Missing Isolation
-
-- Defect Localization
-- Ripple Effect
-
----
-background: /images/overspec.jpg
-class: bg-slide
----
-
-## Overspecification
-
-- caused by Test Doubles
-- caused by too strict Assertions
-
----
-
-## How to fix fragile tests?
-
-- **Relax Assertions** → less overspecification
-- **Test Doubles** → better isolation
-- Don't mock what you don't own
-- Less specific tests — What! Not How!
-- Delete Tests ("Off with their heads")
+1. Assertions
+2. Test Doubles
+3. Fragile Tests
 
 ---
 background: /images/relax.jpg
@@ -84,11 +34,11 @@ class: bg-slide
 
 # Assertions
 
-## Relax Assertions
+## Relaxed Assertions
 
 ---
 
-## Relax Assertions
+## Relaxed Assertions
 
 ```javascript
   expect(foo).toEqual("$129,88");
@@ -101,7 +51,7 @@ class: bg-slide
 
 ---
 
-## Relax Assertions
+## Relaxed Assertions
 
 ```javascript
   expect(foo).toEqual([1, 2, 3, 4]);
@@ -127,8 +77,8 @@ class: bg-slide
 ## Test Doubles
 
 - Dummies
-- Fakes
 - Stubs
+- Fakes
 - Mocks
 - Spies
 
@@ -182,6 +132,9 @@ class: bg-slide
 
 # Spy
 
+---
+background: /images/spy_dim.png
+class: bg-slide bg-slide-dim
 ---
 
 ## Vitest: Everyone is a Spy
@@ -265,6 +218,59 @@ class: bg-slide
 ## Age Calculator
 
 ---
+background: /images/fragile.jpg
+class: bg-slide
+---
+
+# Fragile Tests
+
+http://xunitpatterns.com/Fragile%20Test.html
+
+---
+background: /images/cat.jpg
+class: bg-slide
+---
+
+> I tried harder but TDD still didn't work for me!
+
+<br><br><br><br><br><br>
+
+&mdash; Grumpy Developer
+
+---
+background: /images/ripple.jpg
+class: bg-slide
+---
+
+## Missing Isolation
+
+- Defect Localization
+- Ripple Effect
+
+---
+background: /images/overspec.jpg
+class: bg-slide
+---
+
+## Overspecification
+
+- caused by Test Doubles
+- caused by too strict Assertions
+
+---
+background: /images/fragile.jpg
+class: bg-slide bg-slide-dim
+---
+
+## How to fix fragile tests?
+
+- **Relaxed Assertions** → less overspecification
+- **Test Doubles** → better isolation
+- Don't mock what you don't own
+- Less specific tests — What! Not How!
+- Delete Tests ("Off with their heads")
+
+---
 background: /images/mock.jpg
 class: bg-slide
 ---
@@ -275,6 +281,9 @@ class: bg-slide
 
 &mdash; Steve Freeman
 
+---
+background: /images/fragile.jpg
+class: bg-slide bg-slide-dim
 ---
 
 ## Possible Solution

@@ -14,23 +14,6 @@ transition: none
 <p style="position: absolute; bottom: 60px; right: 40px; z-index: 2; color: white; text-transform: none; text-align: right">Ferdinand Ade &<br> Marco Emrich</p>
 
 ---
-
-## Kent Beck's Canon TDD
-
-  1. List of the test scenarios
-  1. Turn  one item into a test
-  1. Make the test (& all previous tests) pass
-  1. Refactor to improve (optional)
-  1. Go to #2
-
----
-background: /images/canontdd.jpg
-backgroundSize: contain
----
-
-<small style="position: absolute; bottom: 20px; right: 40px; color: #333;"><a href="https://substack.com/@vicwu">by Vic Wu</a></small>
-
----
 background: /images/fire.jpg
 class: bg-slide
 ---
@@ -104,3 +87,125 @@ class: bg-slide
 ---
 
 # GO !
+
+---
+background: /images/fragile.jpg
+class: bg-slide
+---
+
+# Fragile Tests
+
+http://xunitpatterns.com/Fragile%20Test.html
+
+---
+background: /images/cat.jpg
+class: bg-slide
+---
+
+> I tried harder but TDD still didn't work for me!
+
+<br><br><br><br><br><br>
+
+&mdash; Grumpy Developer
+
+---
+background: /images/ripple.jpg
+class: bg-slide
+---
+
+## Missing Isolation
+
+- Defect Localization
+- Ripple Effect
+
+---
+background: /images/edna.jpg
+class: bg-slide
+---
+
+## Possible Solution: Isolation
+
+**=> using Stubs, Fakes**
+
+<br><br><br><br><br><br><br><br>
+
+---
+background: /images/overspec.jpg
+class: bg-slide
+---
+
+## Overspecification
+
+- caused by Test Doubles
+- caused by too strict Assertions
+
+---
+background: /images/relax.jpg
+class: bg-slide
+---
+
+### Possible Solution
+
+## Relax Assertions
+
+---
+
+## Relax Assertions
+
+```javascript
+  expect(foo).toEqual("$129,88");
+```
+=>
+
+```javascript
+  expect(foo).toMatch(/$/d{2,4}[,.]\d\d/);
+```
+
+---
+
+## Relax Assertions
+
+```javascript
+  expect(foo).toEqual([1, 2, 3, 4]);
+```
+=>
+
+```javascript
+  expect(foo).toContain(3);
+```
+
+---
+background: /images/mock.jpg
+class: bg-slide
+---
+
+## Possible Solution
+
+> Don't mock what you don't own
+
+&mdash; Steve Freeman
+
+---
+background: /images/abstract.jpg
+class: bg-slide
+---
+
+## Possible Solution
+
+<br>
+
+- Less specific tests
+- What! Not How!
+- Go Up
+
+---
+background: /images/queen.jpg
+class: bg-slide
+---
+
+## Possible Solutions
+### Delete Tests
+
+> Off-With-Their-Heads
+
+&mdash; Markus Gärtner, also Queen of Hearts

@@ -275,19 +275,6 @@ class: bg-slide
 - caused by too strict Assertions
 
 ---
-background: /images/fragile.jpg
-class: bg-slide bg-slide-dim
----
-
-## How to fix fragile tests?
-
-- **Relaxed Assertions** → less overspecification
-- **Test Doubles** → better isolation
-- Don't mock what you don't own
-- Less specific tests — What! Not How!
-- Delete Tests ("Off with their heads")
-
----
 background: /images/mock.jpg
 class: bg-slide
 ---
@@ -344,3 +331,16 @@ class: bg-slide bg-slide-dim
 > Off-With-Their-Heads
 
 &mdash; Markus Gärtner, also Queen of Hearts
+
+---
+background: /images/fragile.jpg
+class: bg-slide bg-slide-dim
+---
+
+## How to fix fragile tests?
+
+- **Relaxed Assertions** → less overspecification
+- **Test Doubles** → better isolation
+- Don't mock what you don't own
+- Less specific tests — What! Not How!
+- Delete Tests ("Off with their heads")

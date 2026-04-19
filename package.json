@@ -1,0 +1,16 @@
+{
+  "name": "test-doubles",
+  "private": true,
+  "workspaces": [
+    "exercises/tire-pressure",
+    "exercises/starter-vite-vitest-rtl",
+    "code_demos/examples"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.4"
+  }
+}

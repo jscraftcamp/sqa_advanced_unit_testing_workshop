@@ -10,6 +10,8 @@ export default class Alarm {
   public check(): void {
     const psiPressureValue = this.sensor.popNextPressurePsiValue();
 
+    console.log(psiPressureValue);
+
     if (
       psiPressureValue < LOW_PRESSURE_THRESHOLD ||
       psiPressureValue > HIGH_PRESSURE_THRESHOLD

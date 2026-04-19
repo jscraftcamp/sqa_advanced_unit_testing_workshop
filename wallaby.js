@@ -1,11 +1,12 @@
-// Vitest is installed under code_demos/node_modules; config + tests are in examples/.
+// Repo-wide Vitest via vitest.config.ts (test.projects). Open the repo root in the editor.
 // https://wallabyjs.com/docs/integration/vitest
 module.exports = function () {
   return {
+    name: "test-doubles",
     autoDetect: ["vitest"],
     testFramework: {
-      path: "./code_demos/node_modules",
-      configFile: "./code_demos/examples/vitest.config.js",
+      path: "./node_modules",
+      configFile: "./vitest.config.ts",
     },
   };
 };

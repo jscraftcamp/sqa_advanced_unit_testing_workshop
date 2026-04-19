@@ -1,3 +1,3 @@
 {
-  "vitest.rootConfig": "./code_demos/examples/vitest.config.js"
+  "vitest.rootConfig": "./vitest.config.ts"
 }

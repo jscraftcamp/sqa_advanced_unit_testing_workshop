@@ -1,4 +1,4 @@
-// Use when the editor workspace folder is `code_demos` (tests live under `examples/`).
+// Use when the editor workspace folder is `code_demos` only. If you open the repo root, use ../wallaby.js instead.
 // https://wallabyjs.com/docs/integration/vitest
 module.exports = function () {
   return {

@@ -12,12 +12,12 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "happy-dom": "^15.11.7",
-    "vitest": "^3.2.4"
+    "happy-dom": "^20.9.0",
+    "vitest": "^4.1.4"
   },
   "dependencies": {
-    "@types/isomorphic-fetch": "^0.0.35",
+    "@types/isomorphic-fetch": "^0.0.39",
     "isomorphic-fetch": "^3.0.0",
-    "uuid": "^8.3.1"
+    "uuid": "^13.0.0"
   }
 }

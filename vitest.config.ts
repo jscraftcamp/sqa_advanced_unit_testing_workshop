@@ -8,7 +8,7 @@ export default defineConfig({
   test: {
     projects: [
       "exercises/tire-pressure",
-      "exercises/starter-vite-vitest-rtl",
+      "exercises/age-calculator",
       "code_demos/examples",
     ],
   },

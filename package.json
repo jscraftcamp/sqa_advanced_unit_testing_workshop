@@ -3,7 +3,7 @@
   "private": true,
   "workspaces": [
     "exercises/tire-pressure",
-    "exercises/starter-vite-vitest-rtl",
+    "exercises/age-calculator",
     "code_demos/examples"
   ],
   "scripts": {
@@ -11,6 +11,7 @@
     "test:watch": "vitest"
   },
   "devDependencies": {
+    "tsx": "^4.20.5",
     "vitest": "^4.1.4"
   }
 }

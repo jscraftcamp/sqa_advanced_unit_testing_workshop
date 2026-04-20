@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "demo:agify": "tsx src/getAgeForName.ts"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
+    "tsx": "^4.20.5",
     "typescript": "^6.0.3",
     "vitest": "^4.1.4"
   }
